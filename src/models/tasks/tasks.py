@@ -16,7 +16,7 @@ class Tasks(BaseModel):
     examples: List[Example]
 
     statement: Statement
-    private_tests: List[PrivateTest] # 1. инпут. 2. ответ
+    private_tests: List[PrivateTest]
     created_by: str # юз
 
     created_at: datetime
