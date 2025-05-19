@@ -14,6 +14,7 @@ class Tasks(BaseModel):
     input_format_description: str  # Описание входных данных для задачи
     output_format_description: str # Описание выходных данных для задачи
     examples: List[Example]
+    private_tests = List[PrivateTest]
 
     statement: Statement
     created_by: str # юз
